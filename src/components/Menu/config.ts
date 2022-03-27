@@ -35,10 +35,10 @@ const config: MenuEntry[] = [
     label: 'Lottery',
     icon: 'TicketIcon',
     href: 'https://bridgeswap.app/lottery',
-    status: {
-      text: 'WIN',
-      color: 'warning',
-    },
+    // status: {
+    //   text: 'WIN',
+    //   color: 'warning',
+    // },
   },
   // {
   //   label: 'Collectibles',
@@ -100,25 +100,29 @@ const config: MenuEntry[] = [
     icon: 'MoreIcon',
     items: [
       {
-        label: 'Contact',
-        href: 'https://t.me/officialflutterswap',
+        label: 'Team',
+        href: 'https://docs.bridgeswap.app/bridgeswap/our-team',
       },
+      // {
+      //   label: 'Contact',
+      //   href: 'https://t.me/officialflutterswap',
+      // },
       // {
       //   label: 'Voting',
       //   href: 'https://voting.pancakeswap.finance',
       // },
-      {
-        label: 'Github',
-        href: 'https://github.com/BridgeSwap-Exchange',
-      },
-      {
-        label: 'Docs',
-        href: 'https://docs.bridgeswap.app',
-      },
-      {
-        label: 'Blog',
-        href: 'https://bridgeswap.medium.com/',
-      },
+      // {
+      //   label: 'Github',
+      //   href: 'https://github.com/BridgeSwap-Exchange',
+      // },
+      // {
+      //   label: 'Docs',
+      //   href: 'https://docs.bridgeswap.app',
+      // },
+      // {
+      //   label: 'Blog',
+      //   href: 'https://bridgeswap.medium.com/',
+      // },
       // {
       //   label: 'Merch',
       //   href: 'https://pancakeswap.creator-spring.com/',

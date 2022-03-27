@@ -23,6 +23,7 @@ export declare type Shadows = {
     inset: string;
 };
 export declare type Gradients = {
+    bluePurple: string;
     bubblegum: string;
 };
 export declare type Colors = {
@@ -38,6 +39,7 @@ export declare type Colors = {
     dropdown: string;
     invertedContrast: string;
     bright: string;
+    blue: string;
     input: string;
     inputSecondary: string;
     background: string;
