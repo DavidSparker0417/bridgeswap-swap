@@ -39,17 +39,17 @@ export default function SyrupWarningModal({
         <AutoColumn gap="lg">
           <AutoRow gap="6px">
             <StyledWarningIcon />
-            <Text color="failure">Syrup Warning</Text>
+            <Text color="failure">SOUP Warning</Text>
           </AutoRow>
           {transactionType !== '' && (
             <>
               <Text color="failure">
-                Please be careful when <strong>{transactionType}</strong> SYRUP.
+                Please be careful when <strong>{transactionType}</strong> SOUP.
               </Text>
               <Text color="failure">
                 {transactionType === 'Buying'
-                  ? 'You will not receive Fswap rewards for holding purchased SYRUP.'
-                  : 'You will need to buy back the same amount of SYRUP to be able to convert back to CAKE.'}
+                  ? 'You will not receive BRIS rewards for holding purchased SOUP.'
+                  : 'You will need to buy back the same amount of SOUP to be able to convert back to BRIS.'}
               </Text>
             </>
           )}
