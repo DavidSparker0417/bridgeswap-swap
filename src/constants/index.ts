@@ -1,17 +1,15 @@
 import { ChainId, JSBI, Percent, Token, WETH } from '@pancakeswap-libs/sdk'
 
-export const ROUTER_ADDRESS = '0xe5236b0e37cBEB6A7cb22b8f00B5433dDa977D5B'
+export const ROUTER_ADDRESS = '0x154D94A3Ddf1a4b4cBda9F5201eCf99C38ef5Aa0'
 
 // a list of tokens by chain
 type ChainTokenList = {
   readonly [chainId in ChainId]: Token[]
 }
 
-// Fswap CA = 0x078D1b73bbc94C83bA2371A164761A35a66b8612
-// CAKE CA = 0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82
-// export const CAKE = new Token(ChainId.MAINNET, '0x078D1b73bbc94C83bA2371A164761A35a66b8612', 18, 'Fswap', 'FlutterSwap Token')
+// BRIS CA = 0xA22044dEeD66cc2a64BBA021543030D97B920C2c
 
-export const CAKE = new Token(ChainId.MAINNET, '0x078D1b73bbc94C83bA2371A164761A35a66b8612', 18, 'Fswap', 'FlutterSwap Token')
+export const CAKE = new Token(ChainId.MAINNET, '0xA22044dEeD66cc2a64BBA021543030D97B920C2c', 18, 'BRIS', 'BridgeSwap Token')
 
 export const WBNB = new Token(ChainId.MAINNET, '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c', 18, 'WBNB', 'Wrapped BNB')
 export const DAI = new Token(ChainId.MAINNET, '0x1AF3F329e8BE154074D8769D1FFa4eE058B1DBc3', 18, 'DAI', 'Dai Stablecoin')
