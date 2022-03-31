@@ -82,8 +82,9 @@
     "@walletconnect/web3-provider": "1.1.1-alpha.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "yarn run transfer && react-scripts start",
+    "transfer": "cp -R ./vital-folders/@pancakeswap-libs ./node_modules",
+    "build": "yarn run transfer && react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
