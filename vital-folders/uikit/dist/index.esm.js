@@ -3548,7 +3548,7 @@ var ConnectModal = function (_a) {
     var login = _a.login, _b = _a.onDismiss, onDismiss = _b === void 0 ? function () { return null; } : _b;
     return (React.createElement(Modal, { title: "Connect to a wallet", onDismiss: onDismiss },
         connectors.map(function (entry, index) { return (React.createElement(WalletCard, { key: entry.title, login: login, walletConfig: entry, onDismiss: onDismiss, mb: index < connectors.length - 1 ? "8px" : "0" })); }),
-        React.createElement(HelpLink, { href: "https://docs.pancakeswap.finance/guides/faq#how-do-i-set-up-my-wallet-on-binance-smart-chain", external: true },
+        React.createElement(HelpLink, { href: " https://bridgeswap-exchange-1.gitbook.io/bridgeswap/get-started/connecting-your-wallet-to-bridgeswap", external: true },
             React.createElement(Icon$19, { color: "primary", mr: "6px" }),
             "Learn how to connect")));
 };

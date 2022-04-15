@@ -7,9 +7,9 @@ type ChainTokenList = {
   readonly [chainId in ChainId]: Token[]
 }
 
-// BRIS CA = 0xA22044dEeD66cc2a64BBA021543030D97B920C2c
+// BRIS CA = 0x88C945170267BA9b7959E3f07706846890F79924
 
-export const CAKE = new Token(ChainId.MAINNET, '0xA22044dEeD66cc2a64BBA021543030D97B920C2c', 18, 'BRIS', 'BridgeSwap Token')
+export const CAKE = new Token(ChainId.MAINNET, '0x88C945170267BA9b7959E3f07706846890F79924', 18, 'BRIS', 'BridgeSwap Token')
 
 export const WBNB = new Token(ChainId.MAINNET, '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c', 18, 'WBNB', 'Wrapped BNB')
 export const DAI = new Token(ChainId.MAINNET, '0x1AF3F329e8BE154074D8769D1FFa4eE058B1DBc3', 18, 'DAI', 'Dai Stablecoin')
