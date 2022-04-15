@@ -52,6 +52,7 @@ export declare type Colors = {
     menuHover: string;
     gradients: Gradients;
     binance: string;
+    overlay: string;
 };
 export declare type ZIndices = {
     dropdown: number;

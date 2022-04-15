@@ -2689,7 +2689,10 @@ var Modal = function (_a) {
         React__default['default'].createElement(ModalBody, { p: bodyPadding }, children)));
 };
 
-var Overlay = styled__default['default'].div.attrs({ role: "presentation" })(templateObject_1$f || (templateObject_1$f = __makeTemplateObject(["\n  position: fixed;\n  top: 0px;\n  left: 0px;\n  width: 100%;\n  height: 100%;\n  background-color: #452a7a;\n  transition: opacity 0.4s;\n  opacity: ", ";\n  z-index: ", ";\n  pointer-events: ", ";\n"], ["\n  position: fixed;\n  top: 0px;\n  left: 0px;\n  width: 100%;\n  height: 100%;\n  background-color: #452a7a;\n  transition: opacity 0.4s;\n  opacity: ", ";\n  z-index: ", ";\n  pointer-events: ", ";\n"])), function (_a) {
+var Overlay = styled__default['default'].div.attrs({ role: "presentation" })(templateObject_1$f || (templateObject_1$f = __makeTemplateObject(["\n  position: fixed;\n  top: 0px;\n  left: 0px;\n  width: 100%;\n  height: 100%;\n  background-color: ", ";\n  transition: opacity 0.4s;\n  opacity: ", ";\n  z-index: ", ";\n  pointer-events: ", ";\n"], ["\n  position: fixed;\n  top: 0px;\n  left: 0px;\n  width: 100%;\n  height: 100%;\n  background-color: ", ";\n  transition: opacity 0.4s;\n  opacity: ", ";\n  z-index: ", ";\n  pointer-events: ", ";\n"])), function (_a) {
+    var theme = _a.theme;
+    return theme.colors.overlay;
+}, function (_a) {
     var show = _a.show;
     return (show ? 0.6 : 0);
 }, function (_a) {
@@ -3157,7 +3160,7 @@ var socials = [
     {
         label: "Gitbook",
         icon: "GitbookIcon",
-        href: "#",
+        href: "https://bridgeswap-exchange-1.gitbook.io/bridgeswap/",
     },
     {
         label: "Telegram",
@@ -3847,6 +3850,7 @@ var baseColors = {
 };
 var brandColors = {
     binance: "#0773C9",
+    overlay: "#452a7a"
 };
 var lightColors = __assign(__assign(__assign({}, baseColors), brandColors), { background: "#09092b", backgroundDisabled: "#9595e9", contrast: "#311b17", dropdown: "#F6F6F6", invertedContrast: "#FFFFFF", bright: "#ffffff", blue: "#17D2FB", input: "#ffffff", inputSecondary: "#d7caec", tertiary: "#EFF4F5", text: "#ffffff", textDisabled: "#dad5d5", textSubtle: "#8c8c8c", borderColor: "#551b10", card: "#080844", menuHover: "#F7AD19", gradients: {
         bluePurple: "linear-gradient(90.82deg, #FA00FF -73.84%, #17D2FB 141.1%)",
