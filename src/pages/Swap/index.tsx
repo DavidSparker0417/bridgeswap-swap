@@ -225,11 +225,11 @@ const Swap = () => {
     setSwapState((prevState) => ({ ...prevState, tradeToConfirm: trade }))
   }, [trade])
 
-  // This will check to see if the user has selected Syrup or SafeMoon to either buy or sell.
+  // This will check to see if the user has selected Ram or SafeMoon to either buy or sell.
   // If so, they will be alerted with a warning message.
   const checkForWarning = useCallback(
     (selected: string, purchaseType: string) => {
-      if (['SYRUP', 'SAFEMOON'].includes(selected)) {
+      if (['RAM', 'SAFEMOON'].includes(selected)) {
         setTransactionWarning({
           selectedToken: selected,
           purchaseType,
@@ -243,7 +243,7 @@ const Swap = () => {
     (inputCurrency) => {
       setApprovalSubmitted(false) // reset 2 step UI for approvals
       onCurrencySelection(Field.INPUT, inputCurrency)
-      if (inputCurrency.symbol === 'SYRUP') {
+      if (inputCurrency.symbol === 'RAM') {
         checkForWarning(inputCurrency.symbol, 'Selling')
       }
       if (inputCurrency.symbol === 'SAFEMOON') {
@@ -262,7 +262,7 @@ const Swap = () => {
   const handleOutputSelect = useCallback(
     (outputCurrency) => {
       onCurrencySelection(Field.OUTPUT, outputCurrency)
-      if (outputCurrency.symbol === 'SYRUP') {
+      if (outputCurrency.symbol === 'RAM') {
         checkForWarning(outputCurrency.symbol, 'Buying')
       }
       if (outputCurrency.symbol === 'SAFEMOON') {
@@ -280,7 +280,7 @@ const Swap = () => {
         onConfirm={handleConfirmTokenWarning}
       />
       <SyrupWarningModal
-        isOpen={transactionWarning.selectedToken === 'SYRUP'}
+        isOpen={transactionWarning.selectedToken === 'RAM'}
         transactionType={transactionWarning.purchaseType}
         onConfirm={handleConfirmWarning}
       />
