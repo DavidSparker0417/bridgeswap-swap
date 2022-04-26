@@ -40,6 +40,11 @@ const config: MenuEntry[] = [
     //   color: 'warning',
     // },
   },
+  {
+    label: 'Referral Program',
+    icon: 'ReferralIcon',
+    href: 'https://bridgeswap.app/referral'
+  },
   // {
   //   label: 'Collectibles',
   //   icon: 'NftIcon',

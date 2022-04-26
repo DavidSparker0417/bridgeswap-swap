@@ -23,3 +23,4 @@ export { default as AuditIcon } from "./Audit";
 export { default as MediumIcon } from "./Medium";
 export { default as GithubIcon } from "./Github";
 export { default as GitbookIcon } from "./Gitbook";
+export { default as ReferralIcon } from "./Referral";
