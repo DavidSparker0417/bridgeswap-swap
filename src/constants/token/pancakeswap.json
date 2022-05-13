@@ -27,6 +27,14 @@
       "logoURI": "https://dex.bridgeswap.app/images/coins/0x88C945170267BA9b7959E3f07706846890F79924.png"
     },
     {
+      "name": "Decentralized USD",
+      "symbol": "USDD",
+      "address": "0xd17479997F34dd9156Deef8F95A52D81D265be9c",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "https://dex.bridgeswap.app/images/coins/0xd17479997F34dd9156Deef8F95A52D81D265be9c.svg"
+    },
+    {
       "name": "BTCB Token",
       "symbol": "BTCB",
       "address": "0x7130d2a12b9bcbfae4f2634d864a1ee1ce3ead9c",
@@ -58,14 +66,7 @@
       "decimals": 18,
       "logoURI": "https://dex.bridgeswap.app/images/coins/0x55d398326f99059ff775485246999027b3197955.png"
     },
-    {
-      "name": "UST Token",
-      "symbol": "UST",
-      "address": "0x23396cF899Ca06c4472205fC903bDB4de249D6fC",
-      "chainId": 56,
-      "decimals": 18,
-      "logoURI": "https://dex.bridgeswap.app/images/coins/0x23396cF899Ca06c4472205fC903bDB4de249D6fC.png"
-    },
+    
     {
       "name": "WBNB Token",
       "symbol": "WBNB",
