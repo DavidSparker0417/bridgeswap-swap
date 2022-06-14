@@ -61,6 +61,7 @@
     "react-window": "^1.8.5",
     "rebass": "^4.0.7",
     "redux-localstorage-simple": "^2.3.1",
+    "run-script-os": "^1.1.6",
     "styled-components": "^5.2.1",
     "typescript": "^4.1.3"
   },
@@ -83,7 +84,9 @@
   },
   "scripts": {
     "start": "yarn run transfer && react-scripts start",
-    "transfer": "cp -R ./vital-folders/@pancakeswap-libs ./node_modules",
+    "transfer": "run-script-os",
+    "transfer:win32": "xcopy .\\vital-folders\\@pancakeswap-libs .\\node_modules\\@pancakeswap-libs /E/H/C/I/Y",
+    "transfer:darwin:linux": "cp -R ./vital-folders/@pancakeswap-libs ./node_modules",
     "build": "yarn run transfer && react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",

@@ -3415,6 +3415,20 @@ var Panel = function (props) {
 };
 var templateObject_1$6;
 
+var Icon$BitKeep = function (props) {
+    return (React.createElement(Svg, __assign({ viewBox: "0 0 96 96"}, props),
+        React.createElement("path", {fillRule:"evenodd", clipRule:"evenodd", d: "M810.977 0.824219C1258.37 0.824219 1620.98 363.406 1620.98 810.78C1620.98 1258.15 1258.37 1620.74 810.977 1620.74C363.578 1620.74 0.976562 1258.15 0.976562 810.78C0.976563 363.564 363.578 0.824219 810.977 0.824219Z", transform:"matrix(.059259 0 0 0.059259-.057761-.046137)", fill: "#7524F9" }),
+        React.createElement("path", {fillRule:"evenodd", clipRule:"evenodd", d: "M1314.7 561.306V618.573C1314.7 629.805 1308.68 640.245 1299.03 645.782L1114.57 752.247L1279.26 847.005C1301.25 859.661 1314.7 883.073 1314.7 908.384V1060.88C1314.7 1086.2 1301.09 1109.61 1279.1 1122.26L845.939 1370.79C824.107 1383.28 797.213 1383.28 775.223 1370.63L633.473 1288.68C623.031 1282.67 623.031 1267.49 633.473 1261.47L1101.44 992.07C1106.66 989.064 1106.66 981.471 1101.44 978.465L927.572 878.012C917.922 872.317 905.898 872.317 896.09 878.012L420.531 1152C413.254 1156.12 404.236 1156.28 396.959 1152L343.17 1121.16C321.18 1108.5 307.574 1085.09 307.574 1059.62V997.132C307.574 988.747 312.162 980.838 319.439 976.725L1001.14 585.035C1006.36 582.029 1006.36 574.436 1001.14 571.431L827.113 470.661C817.463 464.966 805.439 464.966 795.631 470.661L331.146 737.851C320.705 743.863 307.574 736.269 307.574 724.246V560.515C307.574 535.204 321.18 511.791 343.17 499.136L776.33 250.612C798.162 238.115 825.057 238.115 846.889 250.612L1279.1 499.927C1301.09 512.741 1314.7 535.995 1314.7 561.306Z", transform:"matrix(.059259 0 0 0.059259 0.091555-.134272)", fill: "white" })));
+};
+
+var Icon$HyperWallet = function (props) {
+    return (React.createElement(Svg, __assign({ viewBox: "0 0 96 96"}, props),
+        React.createElement("g", {transform: "matrix(1.161946 0 0 1.161946-23.622346-14.930994)"},
+            React.createElement("circle", { r: "41.31", transform: "translate(61.64 54.16)", fill: "#2386e3" }),
+            React.createElement("path", {d: "M42.06,37.18L37.2,42.11l6.38,4.81l14.13.01-4.31,5.56l2.11,4.81l11.32.04c0,0,.03-1.1.7-5.48c1.07-6.98,13.06-7.39,12.95.44-.09,5.76-4.52,6.45-7.39,6.54s-37.63-.02-37.63-.02l-5.33,4.75l4.58,4.81h17.53l-5.07,6.84l3.82,4.81h11.07L65.1,68.11c0,0,6.78-.14,9.57-.14c4.95,0,18.08-3.23,18.08-16.96c0-12.43-13.56-13.73-18.6-13.73-5.06-.02-32.09-.1-32.09-.1Z", fill: "#2665a3"}),
+            React.createElement("path", {d: "M39.95,32.37l-2.74,9.74l18.39.01-2.2,10.37l11.32.04c0,0,.03-1.1.7-5.48c1.07-6.98,13.06-7.39,12.95.44-.09,5.76-4.52,6.45-7.39,6.54s-37.63-.02-37.63-.02l-3.22,9.56h19.99L47.17,75.22h12.78L62.99,63.3c0,0,6.78-.14,9.57-.14c4.95,0,18.08-3.23,18.08-16.96c0-12.43-13.56-13.73-18.6-13.73-5.07-.02-32.09-.1-32.09-.1Z", fill: "#fff"}))));
+};
+
 var Icon$7 = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 96 96" }, props),
         React.createElement("circle", { cx: "48", cy: "48", r: "48", fill: "white" }),
@@ -3510,11 +3524,12 @@ var ConnectorNames;
     ConnectorNames["Injected"] = "injected";
     ConnectorNames["WalletConnect"] = "walletconnect";
     ConnectorNames["BSC"] = "bsc";
+    ConnectorNames["BitKeep"] = "BitKeep";
 })(ConnectorNames || (ConnectorNames = {}));
 
 var connectors = [
     {
-        title: "OntoWallet",
+        title: "ONTOWallet",
         icon: Icon,
         connectorId: ConnectorNames.Injected,
     },
@@ -3552,6 +3567,16 @@ var connectors = [
         title: "SafePal Wallet",
         icon: Icon$1,
         connectorId: ConnectorNames.Injected,
+    },
+    {
+        title: "HyperPay Wallet",
+        icon: Icon$HyperWallet,
+        connectorId: ConnectorNames.Injected,
+    },
+    {
+        title: "BitKeep Wallet",
+        icon: Icon$BitKeep,
+        connectorId: ConnectorNames.BitKeep,
     },
 ];
 var connectorLocalStorageKey = "connectorId";
